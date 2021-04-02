@@ -3,6 +3,7 @@ $gray: #8f8f8f;
 $secondary-color: #9d64ff;
 $white-text: #c0d1d1;
 $kindagrey: #8f8f8f;
+$kindablue: #132234;
 h3 {
 }
 body {
@@ -61,12 +62,12 @@ body {
     .tech {
       color: $kindagrey;
       font-size: 0.5em;
-      i {
-        color: $secondary-color;
-        padding-right: 5px;
-      }
     }
   }
+}
+i {
+  color: $secondary-color;
+  padding-right: 5px;
 }
 .section-title {
   h2 {
@@ -79,10 +80,53 @@ body {
       position: absolute;
       height: 1px;
       display: block;
-      width: 50vw;
+      width: 40vw;
       background: $secondary-color;
       top: 50%;
       right: 0;
     }
   }
+}
+.experience {
+  padding: 1.5em 1em;
+  .selection {
+    display: flex;
+    flex-direction: row;
+  }
+  .buttons {
+    border-top: 3px solid $gray;
+    font-size: 0.5em;
+    text-align: center;
+    color: $white-text;
+    padding: 10px 20px;
+    width: 30%;
+    transition: all 0.5s;
+  }
+  .buttons:hover {
+    color: $secondary-color;
+    border-color: $secondary-color;
+    background: $kindablue;
+  }
+  .description {
+    padding: 10px 20px;
+    color: $white-text;
+    .heading {
+      h5,
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      h5 {
+        color: $gray;
+      }
+    }
+    p {
+      font-size: 0.5em;
+    }
+  }
+}
+.link {
+  color: $secondary-color;
+}
+.points {
 }

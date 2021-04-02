@@ -74,7 +74,7 @@ body {
   font-size: 0.5em;
 }
 
-.about .technologies-container .tech i {
+i {
   color: #9d64ff;
   padding-right: 5px;
 }
@@ -90,9 +90,63 @@ body {
   position: absolute;
   height: 1px;
   display: block;
-  width: 50vw;
+  width: 40vw;
   background: #9d64ff;
   top: 50%;
   right: 0;
+}
+
+.experience {
+  padding: 1.5em 1em;
+}
+
+.experience .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.experience .buttons {
+  border-top: 3px solid #8f8f8f;
+  font-size: 0.5em;
+  text-align: center;
+  color: #c0d1d1;
+  padding: 10px 20px;
+  width: 30%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.experience .buttons:hover {
+  color: #9d64ff;
+  border-color: #9d64ff;
+  background: #132234;
+}
+
+.experience .description {
+  padding: 10px 20px;
+  color: #c0d1d1;
+}
+
+.experience .description .heading h5,
+.experience .description .heading h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.experience .description .heading h5 {
+  color: #8f8f8f;
+}
+
+.experience .description p {
+  font-size: 0.5em;
+}
+
+.link {
+  color: #9d64ff;
 }
 /*# sourceMappingURL=style.css.map */
