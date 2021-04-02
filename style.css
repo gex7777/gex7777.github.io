@@ -61,6 +61,24 @@ body {
   color: #c0d1d1;
 }
 
+.about .technologies-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about .technologies-container .tech {
+  color: #8f8f8f;
+  font-size: 0.5em;
+}
+
+.about .technologies-container .tech i {
+  color: #9d64ff;
+  padding-right: 5px;
+}
+
 .section-title h2 {
   text-transform: capitalize;
   color: #9d64ff;

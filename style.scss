@@ -54,6 +54,19 @@ body {
   p {
     color: $white-text;
   }
+  .technologies-container {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    .tech {
+      color: $kindagrey;
+      font-size: 0.5em;
+      i {
+        color: $secondary-color;
+        padding-right: 5px;
+      }
+    }
+  }
 }
 .section-title {
   h2 {
