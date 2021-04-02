@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  position: relative;
+}
+.large-header {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #09111a;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+}
+.stuff {
+  height: 200vh;
+}
+
+@media;

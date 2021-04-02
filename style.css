@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.nav-container {
+  background-color: #09111a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5em 1em;
+  opacity: 0.7;
+}
+
+.nav-container i {
+  color: #9d64ff;
+  font-size: 2em;
+}
+
+.nav-container nav {
+  display: none;
+}
+
+.hero {
+  padding: 1.5em 1em;
+}
+
+.hero h3 {
+  color: #8f8f8f;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2px;
+}
+
+.hero h2 {
+  margin-top: 0;
+  color: #9d64ff;
+}
+
+.hero h1 {
+  color: #c0d1d1;
+}
+
+.hero p {
+  color: #c0d1d1;
+}
+
+.about {
+  padding: 1.5em 1em;
+}
+
+.about h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #9d64ff;
+  font-weight: 5px;
+  text-transform: capitalize;
+}
+
+.about h2 span {
+  padding-left: 20px;
+  top: 17px;
+  position: relative;
+  width: 150px;
+  height: 1px;
+  background-color: #9d64ff;
+}
+/*# sourceMappingURL=style.css.map */
