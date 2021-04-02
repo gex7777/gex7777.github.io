@@ -53,25 +53,28 @@ body {
   padding: 1.5em 1em;
 }
 
-.about h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  color: #9d64ff;
-  font-weight: 5px;
-  text-transform: capitalize;
+.about .image-container {
+  text-align: center;
 }
 
-.about h2 span {
-  padding-left: 20px;
-  top: 17px;
+.about p {
+  color: #8f8f8f;
+}
+
+.section-title h2 {
+  text-transform: capitalize;
+  color: #9d64ff;
   position: relative;
-  width: 150px;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
   height: 1px;
-  background-color: #9d64ff;
+  display: block;
+  width: 50vw;
+  background: #9d64ff;
+  top: 50%;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

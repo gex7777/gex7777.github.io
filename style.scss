@@ -2,6 +2,7 @@ $primary-color: #09111a;
 $gray: #8f8f8f;
 $secondary-color: #9d64ff;
 $white-text: #c0d1d1;
+$kindagrey: #8f8f8f;
 h3 {
 }
 body {
@@ -47,20 +48,28 @@ body {
 .about {
   padding: 1.5em 1em;
 
+  .image-container {
+    text-align: center;
+  }
+  p {
+    color: $kindagrey;
+  }
+}
+.section-title {
   h2 {
-    display: flex;
-    flex-direction: row;
-    color: $secondary-color;
-    font-weight: 5px;
     text-transform: capitalize;
+    color: $secondary-color;
+    position: relative;
 
-    span {
-      padding-left: 20px;
-      top: 17px;
-      position: relative;
-      width: 150px;
+    &:after {
+      content: "";
+      position: absolute;
       height: 1px;
-      background-color: $secondary-color;
+      display: block;
+      width: 50vw;
+      background: $secondary-color;
+      top: 50%;
+      right: 0;
     }
   }
 }
