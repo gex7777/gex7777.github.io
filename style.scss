@@ -88,6 +88,7 @@ i {
 }
 .experience {
   padding: 1.5em 1em;
+
   .selection {
     display: flex;
     flex-direction: row;
@@ -107,12 +108,11 @@ i {
     background: $kindablue;
   }
   .description {
-    position: relative;
     padding: 10px 20px;
     color: $white-text;
     > * {
-      position: absolute;
       visibility: hidden;
+      display: none;
     }
     .heading {
       h5,
@@ -137,9 +137,44 @@ i {
 }
 .active {
   visibility: visible !important;
+  display: block !important;
 }
 .button-clicked {
   color: $white-text !important;
   border-color: $secondary-color !important;
   background: $kindablue;
+}
+.projects {
+  padding: 1.5em 1em;
+  justify-content: center;
+  .project-container {
+    background: $kindablue;
+    padding: 0.7em;
+    border-radius: 2%;
+    width: 60vw;
+    margin: 0 auto;
+    .top-icons {
+      padding-top: 1em;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  h2 {
+    color: $white-text;
+  }
+  p {
+    color: $kindagrey;
+  }
+  .technologies {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    .tech-button {
+      padding: 10px;
+      color: $kindagrey;
+      border-radius: 2%;
+    }
+  }
 }

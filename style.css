@@ -128,14 +128,13 @@ i {
 }
 
 .experience .description {
-  position: relative;
   padding: 10px 20px;
   color: #c0d1d1;
 }
 
 .experience .description > * {
-  position: absolute;
   visibility: hidden;
+  display: none;
 }
 
 .experience .description .heading h5,
@@ -162,11 +161,64 @@ i {
 
 .active {
   visibility: visible !important;
+  display: block !important;
 }
 
 .button-clicked {
   color: #c0d1d1 !important;
   border-color: #9d64ff !important;
   background: #132234;
+}
+
+.projects {
+  padding: 1.5em 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project-container {
+  background: #132234;
+  padding: 0.7em;
+  border-radius: 2%;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.projects .project-container .top-icons {
+  padding-top: 1em;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects h2 {
+  color: #c0d1d1;
+}
+
+.projects p {
+  color: #8f8f8f;
+}
+
+.projects .technologies {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.projects .technologies .tech-button {
+  padding: 10px;
+  color: #8f8f8f;
+  border-radius: 2%;
 }
 /*# sourceMappingURL=style.css.map */
