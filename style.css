@@ -114,7 +114,7 @@ i {
   border-top: 3px solid #8f8f8f;
   font-size: 0.5em;
   text-align: center;
-  color: #c0d1d1;
+  color: #8f8f8f;
   padding: 10px 20px;
   width: 30%;
   -webkit-transition: all 0.5s;
@@ -128,8 +128,14 @@ i {
 }
 
 .experience .description {
+  position: relative;
   padding: 10px 20px;
   color: #c0d1d1;
+}
+
+.experience .description > * {
+  position: absolute;
+  visibility: hidden;
 }
 
 .experience .description .heading h5,
@@ -142,11 +148,25 @@ i {
   color: #8f8f8f;
 }
 
-.experience .description p {
+.experience .description .point {
   font-size: 0.5em;
 }
 
 .link {
   color: #9d64ff;
+}
+
+.points {
+  padding: 0.5em;
+}
+
+.active {
+  visibility: visible !important;
+}
+
+.button-clicked {
+  color: #c0d1d1 !important;
+  border-color: #9d64ff !important;
+  background: #132234;
 }
 /*# sourceMappingURL=style.css.map */

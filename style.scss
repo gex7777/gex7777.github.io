@@ -4,8 +4,7 @@ $secondary-color: #9d64ff;
 $white-text: #c0d1d1;
 $kindagrey: #8f8f8f;
 $kindablue: #132234;
-h3 {
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -97,7 +96,7 @@ i {
     border-top: 3px solid $gray;
     font-size: 0.5em;
     text-align: center;
-    color: $white-text;
+    color: $gray;
     padding: 10px 20px;
     width: 30%;
     transition: all 0.5s;
@@ -108,8 +107,13 @@ i {
     background: $kindablue;
   }
   .description {
+    position: relative;
     padding: 10px 20px;
     color: $white-text;
+    > * {
+      position: absolute;
+      visibility: hidden;
+    }
     .heading {
       h5,
       h3 {
@@ -120,7 +124,7 @@ i {
         color: $gray;
       }
     }
-    p {
+    .point {
       font-size: 0.5em;
     }
   }
@@ -129,4 +133,13 @@ i {
   color: $secondary-color;
 }
 .points {
+  padding: 0.5em;
+}
+.active {
+  visibility: visible !important;
+}
+.button-clicked {
+  color: $white-text !important;
+  border-color: $secondary-color !important;
+  background: $kindablue;
 }
