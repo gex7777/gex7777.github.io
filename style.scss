@@ -55,12 +55,16 @@ body {
     color: $white-text;
   }
   .technologies-container {
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: repeat(2, 1fr);
-    .tech {
+    padding: 0.5em;
+    .fa-ul {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(2, 1fr);
       color: $kindagrey;
-      font-size: 0.5em;
+      font-size: 0.7em;
+      & > * {
+        padding: 10px;
+      }
     }
   }
 }
@@ -149,12 +153,11 @@ i {
   justify-content: center;
   .project-container {
     background: $kindablue;
-    padding: 0.7em;
+    padding: 2em;
     border-radius: 2%;
-    width: 60vw;
+    width: 70vw;
     margin: 0 auto;
     .top-icons {
-      padding-top: 1em;
       font-size: 1.5em;
       display: flex;
       flex-direction: row;
@@ -168,13 +171,17 @@ i {
     color: $kindagrey;
   }
   .technologies {
+    padding-left: 0.5em;
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     .tech-button {
-      padding: 10px;
+      font-size: 0.7em;
+      border: 1px solid $secondary-color;
+      width: fit-content;
+      padding: 0 10px;
       color: $kindagrey;
-      border-radius: 2%;
+      border-radius: 20px;
     }
   }
 }
