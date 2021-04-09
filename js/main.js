@@ -4,6 +4,8 @@ const upworkBtn = document.querySelector(".upwork");
 const hexifyDesc = document.querySelector(".hexify-desc");
 const xaviersDesc = document.querySelector(".xaviers-desc");
 const upworkDesc = document.querySelector(".upwork-desc");
+const openBtn = document.querySelector(".fa-bars");
+const closeBtn = document.querySelector(".fa-times");
 hexifyDesc.classList.add("active");
 hexifyBtn.classList.add("button-clicked");
 hexifyBtn.addEventListener("click", () => {
@@ -29,4 +31,10 @@ upworkBtn.addEventListener("click", () => {
   xaviersDesc.classList.remove("active");
   hexifyBtn.classList.remove("button-clicked");
   xaviersBtn.classList.remove("button-clicked");
+});
+openBtn.addEventListener("click", () => {
+  document.querySelector(".nav-links").style.display = "block";
+});
+closeBtn.addEventListener("click", () => {
+  document.querySelector(".nav-links").style.display = "none";
 });

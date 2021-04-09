@@ -13,16 +13,52 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5em 1em;
-  opacity: 0.7;
 }
 
-.nav-container i {
+.nav-container i,
+.nav-container .openBtn {
   color: #9d64ff;
   font-size: 2em;
 }
 
-.nav-container nav {
+.nav-container .nav-links {
   display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 66%;
+  background: #132234;
+  padding: 1em;
+  position: fixed;
+  height: 100vh;
+  right: 0;
+}
+
+.nav-container .nav-links i,
+.nav-container .nav-links .closeBtn {
+  float: right;
+  font-size: 2em;
+}
+
+.nav-container .nav-links .primary-nav {
+  margin-top: 7em;
+  text-align: center;
+}
+
+.nav-container .nav-links .primary-nav li {
+  list-style-type: none;
+  padding: 1em 0em;
+  font-size: 1.5em;
+}
+
+.nav-container .nav-links .primary-nav li a {
+  text-decoration: none;
+  color: #c0d1d1;
+}
+
+.nav-container .nav-links .primary-nav li a:hover {
+  font-weight: bold;
+  color: #9d64ff;
 }
 
 .hero {

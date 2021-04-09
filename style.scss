@@ -15,15 +15,47 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.5em 1em;
-  opacity: 0.7;
 }
 .nav-container {
-  i {
+  i,
+  .openBtn {
     color: #9d64ff;
     font-size: 2em;
   }
-  nav {
+  .nav-links {
     display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 66%;
+    background: $kindablue;
+    padding: 1em;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    i,
+    .closeBtn {
+      float: right;
+      font-size: 2em;
+    }
+
+    .primary-nav {
+      margin-top: 7em;
+      text-align: center;
+      li {
+        list-style-type: none;
+        padding: 1em 0em;
+        font-size: 1.5em;
+        a {
+          text-decoration: none;
+          color: $white-text;
+        }
+        a:hover {
+          font-weight: bold;
+          color: $secondary-color;
+        }
+      }
+    }
   }
 }
 .hero {
