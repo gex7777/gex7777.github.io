@@ -21,22 +21,24 @@ body {
   .openBtn {
     color: #9d64ff;
     font-size: 2em;
+    cursor: pointer;
   }
   .nav-links {
     display: none;
-    position: fixed;
+
     z-index: 2;
     top: 0;
     width: 66%;
     background: $kindablue;
     padding: 1em;
-    position: fixed;
+
     height: 100vh;
     right: 0;
     i,
     .closeBtn {
       float: right;
       font-size: 2em;
+      cursor: pointer;
     }
 
     .primary-nav {
@@ -53,6 +55,16 @@ body {
         a:hover {
           font-weight: bold;
           color: $secondary-color;
+        }
+      }
+    }
+    .secondary-nav {
+      li {
+        list-style-type: none;
+        font-size: 1.5em;
+        a {
+          text-decoration: none;
+          color: $white-text;
         }
       }
     }
@@ -93,7 +105,7 @@ body {
       grid-gap: 1px;
       grid-template-columns: repeat(2, 1fr);
       color: $kindagrey;
-      font-size: 0.7em;
+      font-size: 1em;
       & > * {
         padding: 10px;
       }
@@ -107,19 +119,18 @@ i {
 .section-title {
   h2 {
     text-transform: capitalize;
-    color: $secondary-color;
+    color: $secondary-color !important;
+    overflow: hidden;
+  }
+  h2:after {
+    display: inline-block;
+    content: "";
     position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      height: 1px;
-      display: block;
-      width: 40vw;
-      background: $secondary-color;
-      top: 50%;
-      right: 0;
-    }
+    vertical-align: middle;
+    height: 1px;
+    width: 40vw;
+    background: $secondary-color;
+    left: 0.5em;
   }
 }
 .experience {
@@ -167,6 +178,11 @@ i {
 }
 .link {
   color: $secondary-color;
+  a,
+  a:visited {
+    color: $secondary-color;
+    text-decoration: none;
+  }
 }
 .points {
   padding: 0.5em;
@@ -214,6 +230,111 @@ i {
       padding: 0 10px;
       color: $kindagrey;
       border-radius: 20px;
+    }
+  }
+}
+@media only screen and(min-width:768px) {
+  .closeBtn,
+  .openBtn {
+    display: none !important;
+  }
+
+  .nav-links {
+    font-size: 0.8em;
+    padding: 0% !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto !important;
+    padding-right: 2em !important;
+    background-color: $primary-color !important;
+  }
+  .primary-nav {
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    margin: 0% !important;
+    text-align: left !important;
+    li {
+      padding-right: 1em !important;
+    }
+  }
+  .secondary-nav {
+    li {
+      border: 5px solid $secondary-color;
+      width: fit-content;
+      color: $kindagrey;
+      border-radius: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .hero {
+    margin-top: 5em;
+    height: 80vh !important;
+  }
+  .about-description {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .image-container {
+      padding-top: 5em;
+      width: 200%;
+    }
+  }
+  .experience {
+    height: 90vh;
+    .experience-container {
+      padding-top: 5em;
+      display: flex;
+      flex-direction: row;
+      .selection {
+        flex-direction: column !important;
+        width: 50%;
+        .buttons {
+          font-size: 2em;
+          border-top: none;
+          border-left: 3px solid $gray;
+          width: 70%;
+        }
+      }
+      .description {
+        width: 50%;
+        h3 {
+          font-size: 3em;
+        }
+        h5 {
+          font-size: 1em;
+        }
+        li {
+          padding-top: 2em;
+        }
+      }
+    }
+  }
+  .projects {
+    height: 100vh;
+    .projects-list {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
+      .project-container {
+        width: fit-content;
+      }
     }
   }
 }
