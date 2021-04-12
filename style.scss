@@ -25,7 +25,7 @@ body {
   }
   .nav-links {
     display: none;
-
+    position: absolute;
     z-index: 2;
     top: 0;
     width: 66%;
@@ -51,14 +51,17 @@ body {
         a {
           text-decoration: none;
           color: $white-text;
+          transition: all 0.2s;
         }
         a:hover {
+          font-size: 1.2em;
           font-weight: bold;
           color: $secondary-color;
         }
       }
     }
     .secondary-nav {
+      text-align: center;
       li {
         list-style-type: none;
         font-size: 1.5em;
@@ -93,7 +96,12 @@ body {
   padding: 1.5em 1em;
 
   .image-container {
+    width: 70%;
     text-align: center;
+    img {
+      filter: grayscale(100%);
+      width: 50%;
+    }
   }
   p {
     color: $white-text;

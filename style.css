@@ -24,6 +24,7 @@ body {
 
 .nav-container .nav-links {
   display: none;
+  position: absolute;
   z-index: 2;
   top: 0;
   width: 66%;
@@ -54,11 +55,18 @@ body {
 .nav-container .nav-links .primary-nav li a {
   text-decoration: none;
   color: #c0d1d1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-container .nav-links .primary-nav li a:hover {
+  font-size: 1.2em;
   font-weight: bold;
   color: #9d64ff;
+}
+
+.nav-container .nav-links .secondary-nav {
+  text-align: center;
 }
 
 .nav-container .nav-links .secondary-nav li {
@@ -100,7 +108,14 @@ body {
 }
 
 .about .image-container {
+  width: 70%;
   text-align: center;
+}
+
+.about .image-container img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 50%;
 }
 
 .about p {
