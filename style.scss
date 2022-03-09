@@ -212,6 +212,7 @@ i {
     border-radius: 2%;
     width: 70vw;
     margin: 0 auto;
+    margin-bottom: 2em;
     .top-icons {
       font-size: 1.5em;
       display: flex;
@@ -337,10 +338,10 @@ i {
     height: 100vh;
     .projects-list {
       display: grid;
-      grid-gap: 10px;
+      grid-gap: 2em;
       grid-template-columns: repeat(2, 1fr);
       .project-container {
-        width: fit-content;
+        width: 30em;
       }
     }
   }
