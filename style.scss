@@ -205,7 +205,15 @@ i {
 }
 .projects {
   padding: 1.5em 1em;
+
   justify-content: center;
+  overflow-x: hidden;
+  position: relative;
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
   .project-container {
     background: $kindablue;
     padding: 2em;
@@ -241,7 +249,7 @@ i {
     }
   }
 }
-@media only screen and(min-width:768px) {
+@media only screen and (min-width: 768px) {
   .closeBtn,
   .openBtn {
     display: none !important;
@@ -335,13 +343,15 @@ i {
     }
   }
   .projects {
-    height: 100vh;
     .projects-list {
       display: grid;
       grid-gap: 2em;
       grid-template-columns: repeat(2, 1fr);
       .project-container {
-        width: 30em;
+        max-width: 30rem;
+        .image {
+          height: 40%;
+        }
       }
     }
   }

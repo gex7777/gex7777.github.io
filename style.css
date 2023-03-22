@@ -6,12 +6,8 @@ body {
 
 .nav-container {
   background-color: #09111a;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1.5em 1em;
 }
 
@@ -21,7 +17,6 @@ body {
   font-size: 2em;
   cursor: pointer;
 }
-
 .nav-container .nav-links {
   display: none;
   position: absolute;
@@ -33,47 +28,38 @@ body {
   height: 100vh;
   right: 0;
 }
-
 .nav-container .nav-links i,
 .nav-container .nav-links .closeBtn {
   float: right;
   font-size: 2em;
   cursor: pointer;
 }
-
 .nav-container .nav-links .primary-nav {
   margin-top: 7em;
   text-align: center;
 }
-
 .nav-container .nav-links .primary-nav li {
   list-style-type: none;
   padding: 1em 0em;
   font-size: 1.5em;
 }
-
 .nav-container .nav-links .primary-nav li a {
   text-decoration: none;
   color: #c0d1d1;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .nav-container .nav-links .primary-nav li a:hover {
   font-size: 1.2em;
   font-weight: bold;
   color: #9d64ff;
 }
-
 .nav-container .nav-links .secondary-nav {
   text-align: center;
 }
-
 .nav-container .nav-links .secondary-nav li {
   list-style-type: none;
   font-size: 1.5em;
 }
-
 .nav-container .nav-links .secondary-nav li a {
   text-decoration: none;
   color: #c0d1d1;
@@ -82,23 +68,19 @@ body {
 .hero {
   padding: 1.5em 1em;
 }
-
 .hero h3 {
   color: #8f8f8f;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 2px;
 }
-
 .hero h2 {
   margin-top: 0;
   color: #9d64ff;
 }
-
 .hero h1 {
   color: #c0d1d1;
 }
-
 .hero p {
   color: #c0d1d1;
 }
@@ -106,35 +88,26 @@ body {
 .about {
   padding: 1.5em 1em;
 }
-
 .about .image-container {
   text-align: center;
 }
-
 .about .image-container img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   width: 50%;
 }
-
 .about p {
   color: #c0d1d1;
 }
-
 .about .technologies-container {
   padding: 0.5em;
 }
-
 .about .technologies-container .fa-ul {
-  display: -ms-grid;
   display: grid;
   grid-gap: 1px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   color: #8f8f8f;
   font-size: 1em;
 }
-
 .about .technologies-container .fa-ul > * {
   padding: 10px;
 }
@@ -149,7 +122,6 @@ i {
   color: #9d64ff !important;
   overflow: hidden;
 }
-
 .section-title h2:after {
   display: inline-block;
   content: "";
@@ -164,17 +136,10 @@ i {
 .experience {
   padding: 1.5em 1em;
 }
-
 .experience .selection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .experience .buttons {
   border-top: 3px solid #8f8f8f;
   font-size: 0.7em;
@@ -182,36 +147,29 @@ i {
   color: #8f8f8f;
   padding: 10px 20px;
   width: 30%;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .experience .buttons:hover {
   color: #9d64ff;
   border-color: #9d64ff;
   background: #132234;
 }
-
 .experience .description {
   padding: 10px 20px;
   color: #c0d1d1;
 }
-
 .experience .description > * {
   visibility: hidden;
   display: none;
 }
-
 .experience .description .heading h5,
 .experience .description .heading h3 {
   padding: 0;
   margin: 0;
 }
-
 .experience .description .heading h5 {
   color: #8f8f8f;
 }
-
 .experience .description .point {
   font-size: 0.5em;
 }
@@ -219,7 +177,6 @@ i {
 .link {
   color: #9d64ff;
 }
-
 .link a,
 .link a:visited {
   color: #9d64ff;
@@ -243,11 +200,16 @@ i {
 
 .projects {
   padding: 1.5em 1em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  overflow-x: hidden;
+  position: relative;
 }
-
+.projects .image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .projects .project-container {
   background: #132234;
   padding: 2em;
@@ -256,42 +218,27 @@ i {
   margin: 0 auto;
   margin-bottom: 2em;
 }
-
 .projects .project-container .top-icons {
   font-size: 1.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .projects h2 {
   color: #c0d1d1;
 }
-
 .projects p {
   color: #8f8f8f;
 }
-
 .projects .technologies {
   padding-left: 0.5em;
-  display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-
 .projects .technologies .tech-button {
   font-size: 0.7em;
   border: 1px solid #9d64ff;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 10px;
@@ -307,32 +254,18 @@ i {
   .nav-links {
     font-size: 0.8em;
     padding: 0% !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     height: auto !important;
     padding-right: 2em !important;
     background-color: #09111a !important;
   }
   .primary-nav {
     width: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly !important;
-        -ms-flex-pack: space-evenly !important;
-            justify-content: space-evenly !important;
+    flex-direction: row;
+    justify-content: space-evenly !important;
     margin: 0% !important;
     text-align: left !important;
   }
@@ -341,7 +274,6 @@ i {
   }
   .secondary-nav li {
     border: 5px solid #9d64ff;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     color: #8f8f8f;
@@ -365,13 +297,8 @@ i {
     height: 80vh !important;
   }
   .about-description {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .about-description .image-container {
     padding-top: 5em;
@@ -382,19 +309,11 @@ i {
   }
   .experience .experience-container {
     padding-top: 5em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .experience .experience-container .selection {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
     width: 50%;
   }
   .experience .experience-container .selection .buttons {
@@ -415,18 +334,15 @@ i {
   .experience .experience-container .description li {
     padding-top: 2em;
   }
-  .projects {
-    height: 100vh;
-  }
   .projects .projects-list {
-    display: -ms-grid;
     display: grid;
     grid-gap: 2em;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .projects .projects-list .project-container {
-    width: 30em;
+    max-width: 30rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  .projects .projects-list .project-container .image {
+    height: 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
